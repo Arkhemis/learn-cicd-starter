@@ -36,3 +36,12 @@ jobs:
     
       - name: Build app
         run: ./scripts/buildprod.sh
+      
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+      
+      - name: Build and Push Docker Image
+        run: |
+          gcloud builds submit --tag us-central1-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/notely-ar-repo/notely:${{ github.sha }} .
