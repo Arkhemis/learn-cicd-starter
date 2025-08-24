@@ -1,4 +1,4 @@
-![alt text goes here](https://github.com/Arkhemis/learn-cicd-starter/workflows/README.md/badge.svg)
+![Test](https://github.com/Arkhemis/learn-cicd-starter/workflows/ci.yml/badge.svg)
 
 
 # learn-cicd-starter (Notely)
