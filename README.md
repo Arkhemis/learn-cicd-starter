@@ -1,4 +1,4 @@
-![Test](https://github.com/Arkhemis/learn-cicd-starter/workflows/ci.yml/badge.svg)
+![Test](https://github.com/Arkhemis/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
 
 
 # learn-cicd-starter (Notely)
